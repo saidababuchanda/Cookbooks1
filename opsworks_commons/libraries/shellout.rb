@@ -3,7 +3,7 @@ module OpsWorks
     extend self
 
     # This would be your new default timeout.
-    DEFAULT_OPTIONS = { timeout: 900 }
+    DEFAULT_OPTIONS = { timeout: 10 }
 
     def shellout(command, options = {})
       cmd = Mixlib::ShellOut.new(command, DEFAULT_OPTIONS.merge(options))
